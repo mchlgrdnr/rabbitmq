@@ -10,9 +10,6 @@ RUN chown rabbitmq:rabbitmq $RABBITMQ_HOME/plugins/rabbitmq_delayed_message_exch
 
 RUN chown rabbitmq:rabbitmq /etc/rabbitmq/rabbitmq.conf
 
-RUN chmod 600 /var/lib/rabbitmq/.erlang.cookie || true
-
-
 USER rabbitmq:rabbitmq
 
 RUN rabbitmq-plugins enable rabbitmq_delayed_message_exchange
