@@ -9,7 +9,3 @@ services:
     value: rabbitmq
   - key: RABBITMQ_DEFAULT_PASS
     generateValue: true
-  disk:
-    name: rabbitmq
-    mountPath: /var/lib/rabbitmq
-    sizeGB: 10
