@@ -11,5 +11,5 @@ services:
     generateValue: true
   disk:
     name: rabbitmq
-    mountPath: /var/lib/rabbitmq/mnesia
+    mountPath: /var/lib/rabbitmq
     sizeGB: 10
